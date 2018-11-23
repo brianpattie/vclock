@@ -1,0 +1,16 @@
+Test 3 - This tests that message buffering works as expected
+
+Happens-before relationships
+7 -> 1
+5 -> 2
+6 -> 3
+
+Results:
+Node: 0         Event: 0        Clock: 0 0
+Node: 1         Event: 4        Clock: 0 0
+Node: 1         Event: 5        Clock: 0 1
+Node: 1         Event: 6        Clock: 0 2
+Node: 1         Event: 7        Clock: 0 3
+Node: 0         Event: 1        Clock: 4 3
+Node: 0         Event: 2        Clock: 5 3
+Node: 0         Event: 3        Clock: 6 3
